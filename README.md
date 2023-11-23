@@ -7,7 +7,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 Due to this having two project designations, you'll need to specify the desired project.
-`ng serve multi-angular`
+`ng serve angular-one`
 `ng serve angular-two`
 
 ## Code scaffolding

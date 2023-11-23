@@ -1,6 +1,6 @@
 import { bootstrapApplication } from '@angular/platform-browser';
 import { RootTwoComponent } from './app/angular-two-root/root-two/root-two.component';
-// import { appConfig } from './app/app.config';
+import { appTwoConfig } from './app/angular-two-root/root-two/app-two.config';
 
-bootstrapApplication(RootTwoComponent)
+bootstrapApplication(RootTwoComponent, appTwoConfig)
   .catch((err) => console.error(err));

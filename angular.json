@@ -111,8 +111,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/multi-angular",
-            "index": "src/index.html",
+            "outputPath": "dist/angular-two",
+            "index": "src/index-two.html",
             "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
@@ -156,10 +156,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "multi-angular:build:production"
+              "buildTarget": "angular-two:build:production"
             },
             "development": {
-              "buildTarget": "multi-angular:build:development"
+              "buildTarget": "angular-two:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -167,26 +167,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "multi-angular:build"
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
-            "tsConfig": "tsconfig.spec.json",
-            "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
-            "scripts": []
+            "buildTarget": "angular-two:build"
           }
         }
       }
